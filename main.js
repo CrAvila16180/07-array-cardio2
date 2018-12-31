@@ -1,3 +1,5 @@
+const log = (content) => console.log(content);
+
 const people = [
     { name: 'Wes', year: 1988},
     { name: 'Kait', year: 1986},
@@ -15,8 +17,15 @@ const comments = [
 
   //some and every checks
 
+log('1. Is at least one person 19 or older?');
+log('Array.prototype.some()');
+log('');
     //Array.prototype.some()
         //Is at least one person 19 or older?
+
+        const isAdult = people.some(person => ((new Date()).getFullYear()) - person.year >= 19);
+
+        log(isAdult);
     
     //Array.prototype.every()
         //Is everyone 18 or older
@@ -29,4 +38,3 @@ const comments = [
     //Find the comment with this ID
     //delete the comment with the ID of 823423
 
-    
