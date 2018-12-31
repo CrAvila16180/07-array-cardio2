@@ -23,12 +23,27 @@ log('');
     //Array.prototype.some()
         //Is at least one person 19 or older?
 
-        const isAdult = people.some(person => ((new Date()).getFullYear()) - person.year >= 19);
+        const isAdult = people.some(person => ((new Date()).getFullYear()) - person.year >= 18);
 
         log(isAdult);
+
+log('')
+log('2. Is everyone 18 or older?')
+log('Array.prototype.every()')
+log('')
     
     //Array.prototype.every()
         //Is everyone 18 or older
+
+        const allAdults = people.every(person => ((new Date()).getFullYear()) - person.year >= 18);
+
+        log(allAdults);
+
+log('')
+log('3. Find the comment with the ID of 3423')
+log('Array.prototype.find()')
+log('')
+
 
   //Array.prototype.find()
    //Find is like filter, but instead just returns the one you are looking for 
