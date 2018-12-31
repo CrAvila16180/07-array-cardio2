@@ -42,7 +42,7 @@ log('')
 
 
 log('')
-log('3. Find the comment with the ID of 3423')
+log('3. Find the comment with the ID of 823423')
 log('Array.prototype.find()')
 log('')
 
@@ -54,7 +54,17 @@ log('')
 
     log(comment);
 
+
+log('')
+log('4. Find the comment with the ID of 823423')
+log('Array.prototype.findIndex()')
+log('')
+
   //Array.prototype.findIndex()
     //Find the comment with this ID
+
+    const index = comments.findIndex(comment => comment.id == 823423);
+
+    log(index);
     //delete the comment with the ID of 823423
 
