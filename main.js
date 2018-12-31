@@ -68,3 +68,18 @@ log('')
     log(index);
     //delete the comment with the ID of 823423
 
+log('')
+log('5. Delete the comment with the ID of 823423')
+log('')
+
+  const newComments = [
+      ...comments.slice(0,index),
+      ...comments.slice(index +1)
+  ];
+
+  log('Before')
+  console.table(comments);
+  log('');
+  log('After');
+  console.table(newComments);
+
