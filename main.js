@@ -13,4 +13,20 @@ const comments = [
     { text: 'Nice Nice Nice!', id: 542328 }
   ];
 
-  
+  //some and every checks
+
+    //Array.prototype.some()
+        //Is at least one person 19 or older?
+    
+    //Array.prototype.every()
+        //Is everyone 18 or older
+
+  //Array.prototype.find()
+   //Find is like filter, but instead just returns the one you are looking for 
+    //find the comment with the ID of 823423
+
+  //Array.prototype.findIndex()
+    //Find the comment with this ID
+    //delete the comment with the ID of 823423
+
+    
